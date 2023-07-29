@@ -89,10 +89,10 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="DXd-OR-8JC" kind="show" id="8J7-pD-YMO"/>
+                                    <action selector="resultButtonPressed:" destination="Uj1-vg-eb5" eventType="touchUpInside" id="H1T-ED-fy2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ethanol Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-uQ-0Zf">
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ethanol Price Eg.: 7.1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-uQ-0Zf">
                                 <rect key="frame" x="64" y="420" width="265" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="SSF-a2-sg8"/>
@@ -100,7 +100,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gasoline Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GGn-sZ-Ma4">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gasoline Price Eg.: 7.1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GGn-sZ-Ma4">
                                 <rect key="frame" x="64" y="306" width="265" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="Wau-UP-Rtn"/>
@@ -125,6 +125,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xMk-2k-ZEz"/>
+                    <connections>
+                        <outletCollection property="fuelsPriceField" destination="GGn-sZ-Ma4" collectionClass="NSMutableArray" id="8SC-Ca-sWE"/>
+                        <outletCollection property="fuelsPriceField" destination="Z4p-uQ-0Zf" collectionClass="NSMutableArray" id="gme-9A-G9l"/>
+                        <segue destination="DXd-OR-8JC" kind="show" identifier="goToResultScreen" id="uVt-sQ-Mcq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LbW-27-GHA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,6 +174,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sI8-L8-6u0"/>
+                    <connections>
+                        <outlet property="ResultLabel" destination="b2y-j2-ndF" id="Ncc-4d-wsP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LTn-cv-dGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,7 +184,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8J7-pD-YMO"/>
+        <segue reference="Xl7-NA-8Mo"/>
         <segue reference="jVl-Ng-QgY"/>
     </inferredMetricsTieBreakers>
     <resources>

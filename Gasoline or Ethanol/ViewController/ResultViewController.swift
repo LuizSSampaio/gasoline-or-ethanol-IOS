@@ -8,23 +8,14 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    @IBOutlet weak var ResultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var fuelName = (fuelsPrice.ethanolPrice / fuelsPrice.gasolinePrice > 0.7) ? "gasoline" : "ethanol"
+        
         navigationItem.hidesBackButton = true
-
-        // Do any additional setup after loading the view.
+        ResultLabel.text = "Your fuel choice should be \(fuelName)"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
