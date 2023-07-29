@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254838942A75583200091B59 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254838932A75583200091B59 /* FormViewController.swift */; };
+		254838962A75584700091B59 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254838952A75584700091B59 /* ResultViewController.swift */; };
 		25C7C15A2A74B26300DA300C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C7C1592A74B26300DA300C /* AppDelegate.swift */; };
 		25C7C15C2A74B26300DA300C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C7C15B2A74B26300DA300C /* SceneDelegate.swift */; };
 		25C7C15E2A74B26300DA300C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C7C15D2A74B26300DA300C /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		254838932A75583200091B59 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		254838952A75584700091B59 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		25C7C1562A74B26300DA300C /* Gasoline or Ethanol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gasoline or Ethanol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C7C1592A74B26300DA300C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25C7C15B2A74B26300DA300C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				25C7C15D2A74B26300DA300C /* ViewController.swift */,
+				254838932A75583200091B59 /* FormViewController.swift */,
+				254838952A75584700091B59 /* ResultViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -146,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254838962A75584700091B59 /* ResultViewController.swift in Sources */,
 				25C7C15E2A74B26300DA300C /* ViewController.swift in Sources */,
 				25C7C15A2A74B26300DA300C /* AppDelegate.swift in Sources */,
+				254838942A75583200091B59 /* FormViewController.swift in Sources */,
 				25C7C15C2A74B26300DA300C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
